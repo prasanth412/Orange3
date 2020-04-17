@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.htc.orange.listeners.ExtentReportListener"/>
+  </listeners>
+  <test name="Leavelist(failed)" parallel="tests">
+    <classes>
+      <class name="com.htc.orange.testcases.LeaveConfigTest">
+        <methods>
+          <include name="setup"/>
+          <include name="T002_DashBoardTest"/>
+          <include name="T001_loginPageTest"/>
+          <include name="T003_addLeaveTypesTest"/>
+        </methods>
+      </class> <!-- com.htc.orange.testcases.LeaveConfigTest -->
+    </classes>
+  </test> <!-- Leavelist(failed) -->
+  <test name="AdminTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.htc.orange.testcases.AdminTest">
+        <methods>
+          <include name="T002_DashBoardTest"/>
+          <include name="setup"/>
+          <include name="T001_loginPageTest"/>
+          <include name="T004_searchUserTest"/>
+          <include name="T003_addUserTest"/>
+        </methods>
+      </class> <!-- com.htc.orange.testcases.AdminTest -->
+    </classes>
+  </test> <!-- AdminTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

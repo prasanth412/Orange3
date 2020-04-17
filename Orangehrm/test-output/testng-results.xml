@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38734" started-at="2020-04-17T03:28:12Z" finished-at="2020-04-17T03:28:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38734" started-at="2020-04-17T03:28:12Z" finished-at="2020-04-17T03:28:51Z">
+      <class name="com.htc.orange.testcases.LeaveEntitlementTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.htc.orange.testcases.LeaveEntitlementTest@7cd62f43]" name="setup" is-config="true" duration-ms="10344" started-at="2020-04-16T23:28:13Z" finished-at="2020-04-16T23:28:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="T001_loginPageTest(java.util.Map)[pri:0, instance:com.htc.orange.testcases.LeaveEntitlementTest@7cd62f43]" name="T001_loginPageTest" duration-ms="20106" started-at="2020-04-16T23:28:23Z" data-provider="LoginCredentials" finished-at="2020-04-16T23:28:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=admin123, username=Admin}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T001_loginPageTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.htc.orange.testcases.LeaveEntitlementTest@7cd62f43]" name="setup" is-config="true" duration-ms="10" started-at="2020-04-16T23:28:43Z" finished-at="2020-04-16T23:28:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="T002_DashBoardTest()[pri:0, instance:com.htc.orange.testcases.LeaveEntitlementTest@7cd62f43]" name="T002_DashBoardTest" duration-ms="6472" started-at="2020-04-16T23:28:43Z" depends-on-methods="com.htc.orange.testcases.LeaveEntitlementTest.T001_loginPageTest" finished-at="2020-04-16T23:28:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T002_DashBoardTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.htc.orange.testcases.LeaveEntitlementTest@7cd62f43]" name="setup" is-config="true" duration-ms="7" started-at="2020-04-16T23:28:50Z" finished-at="2020-04-16T23:28:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="T003_addEntitlementTest(java.util.Map)[pri:0, instance:com.htc.orange.testcases.LeaveEntitlementTest@7cd62f43]" name="T003_addEntitlementTest" duration-ms="932" started-at="2020-04-16T23:28:50Z" data-provider="LeaveEntitlement" depends-on-methods="com.htc.orange.testcases.LeaveEntitlementTest.T002_DashBoardTest" finished-at="2020-04-16T23:28:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LeaveEmp=John Smith, Entitlement=3000.00, LeaveType=Vacation US}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T003_addEntitlementTest -->
+      </class> <!-- com.htc.orange.testcases.LeaveEntitlementTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
